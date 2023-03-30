@@ -56,7 +56,7 @@ export class App {
     }))
   }
 
-  public run(PORT: number) {
+  public run(PORT: number | string) {
     this.app.listen(PORT, () => console.log('Running on port', PORT))
   }
 }

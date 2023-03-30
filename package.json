@@ -4,10 +4,12 @@
   "description": "",
   "main": "index.ts",
   "engines": {
-    "node": "14.x"
+    "node": "18"
   },
   "scripts": {
-    "dev": "ts-node-dev ./src/index"
+    "dev": "ts-node-dev ./src/index",
+    "build": "tsup src",
+    "start": "node dist/index"
   },
   "keywords": [],
   "author": "",
@@ -20,6 +22,7 @@
     "express": "^4.18.2",
     "express-graphql": "^0.12.0",
     "graphql": "14",
+    "tsup": "^6.7.0",
     "typescript": "^4.9.5",
     "uuid": "^9.0.0"
   },
